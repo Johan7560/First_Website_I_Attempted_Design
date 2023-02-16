@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Generics | Store</title>
+		<meta name="description" content="This is the description" />
+		<link rel="stylesheet" href="/assets/style.css" />
+		<script src="/assets/store.js" async></script>
+	</head>
+
+	<body>
+		<header class="main-header">
+			<nav class="main-nav nav">
+				<ul>
+					<li><a href="/index.html">HOME</a></li>
+					<li><a href="./store.html">STORE</a></li>
+					<li><a href="./about.html">ABOUT</a></li>
+				</ul>
+			</nav>
+			<h1 class="band-name band-name-large">The Generics</h1>
+		</header>
+		<section class="container content-section">
+			<h2 class="section-header">MUSIC</h2>
+			<div class="shop-items">
+				<div class="shop-item">
+					<span class="shop-item-title"
+						>Album 1 -<br />
+						The Beginning</span
+					>
+					<img class="shop-item-image" src="./assets/Images/Album 1.png" />
+					<p class="detail">The first album released by <br />The Generics</p>
+					<input type="radio" id="choice" name="gender" value="choice" />
+					<label for="choice">Platinum Edition</label>
+					<div class="shop-item-details">
+						<span class="shop-item-price">R120</span>
+						<button class="btn btn-primary shop-item-button" type="button">
+							ADD TO CART
+						</button>
+					</div>
+				</div>
+				<div class="shop-item">
+					<span class="shop-item-title"
+						>Album 2 -<br />
+						The Next Step</span
+					>
+					<img class="shop-item-image" src="./assets/Images/Album 2.png" />
+					<p class="detail">
+						This album is more of a subtle <br />album then the first album
+					</p>
+					<div class="shop-item-details">
+						<span class="shop-item-price">R120</span>
+						<button class="btn btn-primary shop-item-button" type="button">
+							ADD TO CART
+						</button>
+					</div>
+				</div>
+				<div class="shop-item">
+					<span class="shop-item-title"
+						>Album 3 -<br />
+						Breaking Records</span
+					>
+					<img class="shop-item-image" src="./assets/Images/Album 3.png" />
+					<p class="detail">
+						The album that will break all records<br />
+						in the music industry
+					</p>
+					<div class="shop-item-details">
+						<span class="shop-item-price">R100</span>
+						<button class="btn btn-primary shop-item-button" type="button">
+							ADD TO CART
+						</button>
+					</div>
+				</div>
+				<div class="shop-item">
+					<span class="shop-item-title"
+						>Album 4 -<br />
+						The Best Hits</span
+					>
+					<img class="shop-item-image" src="./assets/Images/Album 4.png" />
+					<p class="detail">
+						The record with all the hits over the 7 <br />years of making the best music
+						to date
+					</p>
+					<div class="shop-item-details">
+						<span class="shop-item-price">R200</span>
+						<button class="btn btn-primary shop-item-button" type="button">
+							ADD TO CART
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container content-section">
+			<h2 class="section-header">MERCH</h2>
+			<div class="shop-items">
+				<div class="shop-item">
+					<span class="shop-item-title">T-Shirt</span>
+					<img class="shop-item-image" src="./assets/Images/Shirt.png" />
+					<p class="detail">The new released t-shirt with <br />smoke and 100% cotton</p>
+					<h4>T-Shirt size:</h4>
+					<input type="radio" id="Large" name="shirt" value="Large" />
+					<label for="Large">Large</label>
+					<input type="radio" id="medium" name="shirt" value="medium" />
+					<label for="medium">Medium</label>
+					<input type="radio" id="small" name="shirt" value="small" />
+					<label for="small">Small</label>
+					<div class="shop-item-details">
+						<span class="shop-item-price">R250</span>
+						<button class="btn btn-primary shop-item-button" type="button">
+							ADD TO CART
+						</button>
+					</div>
+				</div>
+				<div class="shop-item">
+					<span class="shop-item-title">Coffee Cup</span>
+					<img class="shop-item-image" src="./assets/Images/Cofee.png" />
+					<p class="shop-item-detail">
+						Best mug to use for your morning coffee <br />and have the right start to your
+						day
+					</p>
+					<h4>Choose mug size:</h4>
+					<input type="radio" id="Tall" name="mug" value="Tall" />
+					<label for="Tall">Tall</label>
+					<input type="radio" id="medium" name="mug" value="medium" />
+					<label for="medium">Medium</label>
+					<input type="radio" id="small" name="mug" value="small" />
+					<label for="small">Small</label>
+					<div class="shop-item-details">
+						<span class="shop-item-price">R60</span>
+						<button class="btn btn-primary shop-item-button" type="button">
+							ADD TO CART
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container content-section">
+			<h2 class="section-header">CART</h2>
+			<div class="cart-row">
+				<span class="cart-item cart-header cart-column">ITEM</span>
+				<span class="cart-price cart-header cart-column">PRICE</span>
+				<span class="cart-quantity cart-header cart-column">QUANTITY</span>
+			</div>
+			<div class="cart-items"></div>
+			<div>
+				<strong>Copoun code:</strong
+				><input id="coupon" class="code-coupon" type="text" name="coupon" /><button
+					class="coupon-submit"
+				>
+					Submit
+				</button>
+			</div>
+			<div class="cart-total">
+				<strong class="cart-total-title">Sub Total</strong>
+				<span class="cart-total-price">R0</span>
+				<br />
+				<strong class="cart-total-title">Total incl VAT</strong>
+				<span class="cart-total-vat">R0</span>
+			</div>
+			<button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+		</section>
+		<footer class="main-footer">
+			<div class="container main-footer-container">
+				<h3 class="band-name">The Generics</h3>
+				<ul class="nav footer-nav">
+					<li>
+						<a href="https://www.youtube.com" target="_blank">
+							<img src="./assets/Images/YouTube Logo.png" />
+						</a>
+					</li>
+					<li>
+						<a href="https://www.spotify.com" target="_blank">
+							<img src="./assets/Images/Spotify Logo.png" />
+						</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com" target="_blank">
+							<img src="./assets/Images/Facebook Logo.png" />
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
